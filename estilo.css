@@ -244,6 +244,7 @@ justify-content: center;
 
 .conoceme .btn:hover a{
     letter-spacing: 3px;
+
 }
 
 .conoceme .btn a::before{
@@ -319,14 +320,15 @@ box-shadow: 0 0 5px #40a4de,
 
 .habilidades-container{
     background-color: lightsteelblue;
+    padding: 20px;
 }
 
 .habilidades .habilidades-card{
     display: flex;
-    /* border: 1px solid; */
     align-items: center;
-    padding: 30px;
 }
+
+
 
 .habilidades .habilidades-card_img{
     display: flex;
@@ -334,30 +336,91 @@ box-shadow: 0 0 5px #40a4de,
     justify-content: center;
     padding: 10px;
     align-items: center;
-    margin-left: 200px;
 }
 
 .habilidades .habilidades-card_img img{
     width: 50px;
 }
 
+.habilidades .habilidades-card_img .apps{
+    width: 100px;
+}
 .habilidades .habilidades-card .habilidades-card_barra{
     width: 80%;
-    height: 30px;
+    height: 20px;
 }
 
 .habilidades .habilidades-card .habilidades-card_barra div{
-    width: 70%;
-    height: 30px;
+    width: 98%;
+    height: 20px;
     background-color: white;
 }
 
 .habilidades .habilidades-card .habilidades-card_barra .habilidades-card_loader{
-    background-color: green;
-    width: 80%;
-    height: 30px;
+    background-color: red;
+    width: 10px;
+    height: 20px;
+}
+.habilidades-card.html .habilidades-card_loader[data-scroll="in"]{
+    width: 78%;
+    height: 20px;
+    background-color: rgba(65, 206, 9, 0.658);
+    transition: 2s;
+
 }
 
+.habilidades-card.css .habilidades-card_loader[data-scroll="in"]{
+    width: 60%;
+    height: 20px;
+    background-color: rgba(189, 186, 15, 0.658);
+    transition: 2s;
+
+}
+
+.habilidades-card.js .habilidades-card_loader[data-scroll="in"]{
+    width: 30%;
+    height: 20px;
+    background-color: rgba(241, 131, 6, 0.658);
+    transition: 2s;
+
+}
+
+.habilidades-card.python .habilidades-card_loader[data-scroll="in"]{
+    width: 60%;
+    height: 20px;
+    background-color: rgba(189, 186, 15, 0.658);
+    transition: 2s;
+
+}
+
+.habilidades-card.ilustrator .habilidades-card_loader[data-scroll="in"]{
+    width: 70%;
+    height: 20px;
+    background-color: rgba(114, 189, 15, 0.658);
+    transition: 2s;
+}
+
+.habilidades-card.apps .habilidades-card_loader[data-scroll="in"]{
+    width: 80%;
+    height: 20px;
+    background-color: rgba(83, 255, 15, 0.658);
+    transition: 2s;
+}
+
+.habilidades-card.git .habilidades-card_loader[data-scroll="in"]{
+    width: 85%;
+    height: 20px;
+    background-color: rgba(83, 255, 15, 0.788);
+    transition: 2s;
+}
+
+
+.habilidades-card.github .habilidades-card_loader[data-scroll="in"]{
+    width: 85%;
+    height: 20px;
+    background-color: rgba(83, 255, 15, 0.788);
+    transition: 2s;
+}
 .intereses{
     position: relative;
 }
