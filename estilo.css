@@ -6,43 +6,125 @@
     margin: 0;
     padding: 0;
 }
-header{
-    /* background-color: black; */
-    height: 70px;
+
+html{
+    font-size: 62.5%;
+}
+
+
+header {
     display: flex;
     align-items: center;
-    padding: 5px;
-    text-decoration: none;
     justify-content: flex-end;
-    position: absolute;
+    height: 6rem;
     width: 100%;
-    /* z-index: 2; */
+    font-size: 1.8rem;
+    position: absolute;
+    z-index: 100;
 }
 
-header ul{
-display: flex;
-list-style: none;
-
+header.active{
+    background-color: #c5cfd1;
 }
 
-header ul li{
-    padding: 10px;
+
+#toggle {
+    margin-right: 3rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+#toggle::before {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 0.2rem;
+    background-color: black;
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 0.2rem;
+    background-color: black;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+#toggle.active::before {
+    transform: translateY(0) rotate(45deg);
+    background-color:#C74D69;
+}
+
+#toggle.active::after {
+    transform: translateY(0) rotate(-45deg);
+    background-color: #C74D69;
+}
+
+.main-nav{
+    width: 100%;
+    position: absolute;
+    top: 5.8rem;
+}
+
+.main-nav #nav-items {
+    display: none;
+}
+
+.main-nav #nav-items.active {
+    display: block;
+    top: 5.9rem;
+    background-color: #c5cfd1;
+}
+
+.main-nav #nav-items ul {
+    text-align: center;
+    list-style: none;
+}
+
+.main-nav #nav-items ul:last-child {
     border-bottom: 1px solid black;
+    box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
 }
 
-li,a,nav{
+.main-nav #nav-items li {
+    padding: 1rem 4rem;
+}
+
+.main-nav #nav-items li:hover {
+    background-color: var(--background-color);
+    border-radius: 2rem;
+}
+
+.main-nav #nav-items li:active {
+    background-color: var(--background-color);
+    font-size: 1.4rem;
+}
+
+.main-nav #nav-items li a {
+    display: block;
     text-decoration: none;
-    font-weight: 500;
+    letter-spacing: 0.2rem;
     color: black;
-    font-size: 16px;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 8px 8px;
+
 }
 
-header ul li a:hover{
-    /* font-size:x-large; */
-    color: rgba(0, 136, 168, 1);
-    font-weight: bold;
-    
+.main-nav #nav-items li a:hover {
+    color: var(--gold);
 }
+
 
 .principal{
     background-image: url("imagenes/imagen-detalle-teclado-computadora-portatil-fondo-borroso_9563-4424.jpg");
@@ -58,6 +140,7 @@ header ul li a:hover{
 
 .principal h1{
     font-size: 50px;
+    text-align: center;
 }
 
 .principal h1[data-scroll="in"]{
@@ -89,7 +172,7 @@ justify-content: center;
 
 .conoceme-container{
     align-items: center;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +239,7 @@ justify-content: center;
     overflow: hidden;
     transition: 0.5s;
     backdrop-filter: blur(15px);
+    font-size: 15px;
 }
 
 .conoceme .btn:hover a{
