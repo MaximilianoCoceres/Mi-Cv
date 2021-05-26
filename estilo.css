@@ -454,65 +454,6 @@ box-shadow: 0 0 5px #40a4de,
     font-size: 20px;
     font-weight: bolder;
 }
-/* .intereses{
-    position: relative;
-}
-
-.intereses-imagenes{
-    width: 60px;
-    height: 60px;
-    margin: 20px;
-}
-
-.intereses-imagenes img{
-    width: 100%;
-}
-
-.intereses-conteiner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.intereses-conteiner_imagenes{
-    
-    padding:30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: rgba(0, 130, 164, 1);
-}
-
-.interes-titulos_imagenes h3{
-    color: rgba(0, 130, 164, 1);
-}
-
-.intereses-flechas{
-    display: none;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: calc(50% - 30px);
-}
-
-.derecha{
-    background-image: url("./imagenes/001-angulo-de-flecha-derecha.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    right: 10px;
-}
-
-.izquierda{
-    background-image: url("./imagenes/002-angulo-de-flecha-apuntando-a-la-izquierda.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 10px;
-} */
 
 .capacitaciones-container{
     width: 100%;
@@ -544,11 +485,7 @@ box-shadow: 0 0 5px #40a4de,
   }
 
 .tarjeta-estudios-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+width: 180%;
     
 }
 
