@@ -158,7 +158,7 @@ header.active{
 
 .titulos-secciones{
 background-color: black;
-height: 25px;
+height: 30px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -421,7 +421,40 @@ box-shadow: 0 0 5px #40a4de,
     background-color: rgba(83, 255, 15, 0.788);
     transition: 2s;
 }
-.intereses{
+
+.container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-item{
+    position: absolute;
+    top: calc(50%);
+    left: 50%;
+}
+
+.carousel-item img{
+    width: 250px;
+    height: 250px;
+}
+
+.titulo-item{
+    text-align: center;
+    color: rgba(0, 130, 164, 1);
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* .intereses{
     position: relative;
 }
 
@@ -479,7 +512,7 @@ box-shadow: 0 0 5px #40a4de,
     background-repeat: no-repeat;
     background-size: contain;
     left: 10px;
-}
+} */
 
 .capacitaciones-container{
     width: 100%;
