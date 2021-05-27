@@ -457,6 +457,7 @@ box-shadow: 0 0 5px #40a4de,
 
 .capacitaciones-container{
     width: 100%;
+    padding: 30px 10px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -477,12 +478,58 @@ box-shadow: 0 0 5px #40a4de,
     display: flex;
     justify-content: center;
     padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border: 5px double black;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 30px;
+    min-height: 600px;
   }
 
+  .swiper-slide ul{
+      padding: 20px;
+  }
+  .swiper-slide li{
+      list-style-type:none;;
+  }
+
+  .swiper-slide h2{
+    text-align: center;
+}
+
+.swiper-slide .imagen-estado{
+    width: 50px;
+    height: 50px;
+}
   .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 150px;
+    height: 150px;
   }
+
+  .swiper-slide .solucion_educa{
+      display: block;
+      width: 150px;
+      height: 90px;
+  }
+
+  .swiper-slide .benowu{
+    display: block;
+    width: 150px;
+    height: 90px;
+}
+
+.swiper-slide .udemy{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
 
 .tarjeta-estudios-container{
 width: 180%;
@@ -533,6 +580,7 @@ width: 180%;
     align-items: center;
     display: flex;
     padding: 30px;
+    text-align: center;
 }
 
 .experiencia-empleos{
@@ -544,10 +592,6 @@ width: 180%;
     padding: 30px;
 }
 
-/* .experiencia-empleos ul[data-scroll="in"]{
-    animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration
-    animation-duration: 3s; don't forget to set a duration! 
-} */
 
 .experiencia-empleos li{
     list-style: none;
@@ -606,6 +650,13 @@ width: 180%;
 
 .redes-container li{
     list-style: none;
+    
+}
+
+.redes-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
 }
 
 .redes-sociales{
