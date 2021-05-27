@@ -4,7 +4,6 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 html{
@@ -530,6 +529,10 @@ box-shadow: 0 0 5px #40a4de,
     height: 100px;
 }
 
+
+.estudios{
+    overflow: hidden;
+}
 
 .tarjeta-estudios-container{
 width: 180%;
